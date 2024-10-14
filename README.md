@@ -1,3 +1,11 @@
+```
+#!git clone https://github.com/Anze-/facexformer.git
+#!pip install facenet-pytorch
+# from huggingface_hub import hf_hub_download
+# hf_hub_download(repo_id="kartiknarayan/facexformer", filename="ckpts/model.pt", local_dir="./facexformer")
+from facexformer import inference
+inference.gpu_faceagerace_model(Image.open("path/to/file"),"facexformer/ckpts/model.pt")
+```
 <div align="center">
 
 # _FaceXFormer_ : A Unified Transformer <br> for Facial Analysis
